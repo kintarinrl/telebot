@@ -114,8 +114,8 @@ def send_summary(message):
                 CAMPAIGN_ID = selected_campaign_id,
                 START_DATE = start_date,
                 END_DATE = end_date,
-                TOTAL_SPENT = total_spent,
-                TOTAL_CONVERSION = total_conversion,
+                TOTAL_SPENT = "${0:,.0f}".format(total_spent),
+                TOTAL_CONVERSION = "{0:,.0f}".format(total_conversion),
                 CPC = "{0:,.1f}".format(cpc)
             )
 
